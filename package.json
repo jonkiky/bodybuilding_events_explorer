@@ -1,0 +1,30 @@
+{
+  "name": "Bodybuilding Events",
+  "homepage": ".",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Yizhen Chen <jonkiky@gmail.com>",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "leaflet": "^1.9.4",
+    "next": "^14.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-leaflet": "^4.2.1",
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}
