@@ -19,6 +19,12 @@ export default function Home() {
   const [eventType, setEventType] = useState("Event Type");
   const [divisionType, setDivisionType] = useState("Divisions");
   const [dateRange, setDateRange] = useState({ start: "", end: "" });
+  const [federation, setFederation] = useState("Federation/Competition"); // New State for Competitions/Federations
+
+   // Filter options for Competitions/Federations
+  const federationOptions = ["All", "OCB", "WNBF", "NPC", "IFBB"];
+
+
 
   // Sample data for markers
   const getFilteredData = (data) => {
@@ -30,6 +36,8 @@ export default function Home() {
         eventType === "Event Type" || eventType === "Any Event Type" || marker.eventType?.includes(eventType);
       const divisionTypeMatch =
         divisionType === "Divisions" || divisionType === "Any Division" || marker.divisions?.includes(divisionType);
+       const federationMatch =
+          federation === "Federation/Competition" || federation === "All" || marker.federation?.includes(federation); // New Filter Logic
 
       const markerDate = new Date(marker.date);
       const startDate = dateRange.start ? new Date(dateRange.start) : null;
@@ -39,7 +47,7 @@ export default function Home() {
         (!startDate || markerDate >= startDate) &&
         (!endDate || markerDate <= endDate);
 
-      return eventTypeMatch && divisionTypeMatch && dateRangeMatch;
+        return eventTypeMatch && divisionTypeMatch && federationMatch && dateRangeMatch;
     })
     .sort((a, b) => {
       const dateA = new Date(a.date);
@@ -107,7 +115,7 @@ export default function Home() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
+      <Header ocb={markerData.length}/>
 
       <div className="flex flex-1 pt-16">
         {/* Left Section */}
@@ -141,8 +149,62 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Event Type Dropdown */}
+                 {/* Federation Dropdown */}
             <div className="flex items-center space-x-2">
+              <Menu as="div" className="relative inline-block text-left flex-1">
+                <div>
+                  <Menu.Button className="inline-flex justify-between w-full rounded-sm border border-black shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    {federation}
+                    <svg
+                      className="-mr-1 ml-2 h-5 w-5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06-.02L10 10.664l3.71-3.473a.75.75 0 111.04 1.084l-4.25 3.973a.75.75 0 01-1.04 0l-4.25-3.973a.75.75 0 01-.02-1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </Menu.Button>
+                </div>
+
+                <Transition
+                  as={Fragment}
+                  enter="transition ease-out duration-100"
+                  enterFrom="transform opacity-0 scale-95"
+                  enterTo="transform opacity-100 scale-100"
+                  leave="transition ease-in duration-75"
+                  leaveFrom="opacity-100 scale-100"
+                  leaveTo="opacity-0 scale-95"
+                >
+                  <Menu.Items className="absolute left-0 mt-2 w-full rounded-sm shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
+                    <div className="py-1">
+                      {federationOptions.map((item, index) => (
+                        <Menu.Item key={index}>
+                          {({ active }) => (
+                            <button
+                              onClick={() => handleDropdownSelect(setFederation, item)}
+                              className={`${
+                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'
+                              } block w-full text-left px-4 py-2 text-sm`}
+                            >
+                              {item}
+                            </button>
+                          )}
+                        </Menu.Item>
+                      ))}
+                    </div>
+                  </Menu.Items>
+                </Transition>
+              </Menu>
+            </div>
+
+
+            {/* Event Type Dropdown */}
+            <div className="flex items-center space-x-2 pt-4">
               <Menu as="div" className="relative inline-block text-left flex-1">
                 <div>
                   <Menu.Button className="inline-flex justify-between w-full rounded-sm border border-black shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">

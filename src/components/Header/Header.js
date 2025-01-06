@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
 
-const Header = () => {
+const Header = (data) => {
   return (
     <header
       className="h-16 flex items-center justify-between border-b border-slate-200 w-full bg-white text-slate-600 px-4 fixed top-0"
@@ -18,10 +18,19 @@ const Header = () => {
 
         {/* Buttons */}
         <div className="hidden sm:flex space-x-2 pl-8">
-          {/*<button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-            OCB
-          </button>
           <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
+            OCB  
+              <span
+              className="w-4 h-4 rounded-full bg-red-500"
+              title={data.ocb}
+               style={{
+                padding: "2px 7px",
+                color: "white",
+                marginLeft: "8px"
+              }}
+              >{data.ocb}</span>
+          </button>
+          {/*<button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
             WNBF
           </button>
           <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">

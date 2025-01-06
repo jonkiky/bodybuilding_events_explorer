@@ -11,6 +11,7 @@
       "address": "Tallahassee, FL",
       "fullAddress": "Turner Auditorium on Tallahassee - 444 Appleyard Dr. Tallahassee, FL",
       "date": "2025-01-18",
+      "federation":"OCB",
       "flyers": "https://static.wixstatic.com/media/86cc23_0a63b722d7b1439e9a86567de506091c~mv2.jpg/v1/fill/w_930,h_1416,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/OCB%20Winter%20Classic%202025.jpg",
       "link": "https://www.slyzonefitness.com/winterclassicpro",
       "eventType": [
@@ -44,6 +45,7 @@
       "address": "Williamsburg, VA",
       "fullAddress": "Crosswalk - 7575 Richmond Road, Williamsburg, VA 23188",
       "date": "2025-02-01",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTQ2&eventinfo=OCB020125VA",
       "eventType": [
@@ -73,6 +75,7 @@
       "address": "Portland, OR",
       "fullAddress": "Portland Community College - Performing Arts Center (Sylvania Campus) - 12000 SW 49th Ave. Portland, OR 97219",
       "date": "2025-02-08",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/92977ae4d2ba21425a59afb269c2a14e.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTQ5&eventinfo=OCB021525OR",
       "eventType": [
@@ -103,6 +106,7 @@
       "address": "Phoenix, AZ",
       "fullAddress": "Kroc Center - 1375 E. Broadway Road Phoenix, AZ 85040",
       "date": "2025-02-08",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/043c3d7e489c69b48737cc0c92d0f3a2.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTc0&eventinfo=OCB020825AZ",
       "eventType": [
@@ -132,6 +136,7 @@
       "address": "Hilton Head, SC",
       "fullAddress": "Seahawk Cultural Center - 70 Wilborn Rd Hilton Head, SC 29926",
       "date": "2025-02-15",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/01882513d5fa7c329e940dda99b12147.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTQ1&eventinfo=OCB021525SC",
       "eventType": [
@@ -161,6 +166,7 @@
       "address": "Atlantic City, NJ",
       "fullAddress": "Superstar Theater, Resorts Casino Hotel - 1133 Boardwalk, Atlantic City, NJ 08401",
       "date": "2025-02-23",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/7ce3284b743aefde80ffd9aec500e085.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTUz&eventinfo=OCB022325NJ",
       "eventType": [
@@ -193,6 +199,7 @@
       "address": "Tampa, FL",
       "fullAddress": "New Tampa Performing Arts Center - 8550 Hunters Village Road, Tampa, FL 33647",
       "date": "2025-03-08",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/061412e4a03c02f9902576ec55ebbe77.jpg",
       "link": "https://www.captainscupfoundation.com/",
       "eventType": [
@@ -227,6 +234,7 @@
       "address": "Las Vegas, NV",
       "fullAddress": "Plaza Hotel & Casino - 1 Main St, Las Vegas, NV 89101",
       "date": "2025-03-15",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/7634ea65a4e6d9041cfd3f7de18e334a.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTY4&eventinfo=OCB031525NV",
       "eventType": [
@@ -258,6 +266,7 @@
       "address": "Albuquerque, NM",
       "fullAddress": "REVEL Entertainment - 4720 Alexander Blvd. NE, Albuquerque, NM 87107",
       "date": "2025-03-16",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/c32d9bf27a3da7ec8163957080c8628e.jpeg",
       "link": "https://bodybeautifulbronzingllc.com/events/ocb-albuquerque-natural-march-2025/",
       "eventType": [
@@ -289,6 +298,7 @@
       "address": "Wilmington, NC",
       "fullAddress": "North Front Theatre - 21 N Front St, Wilmington, NC 28401",
       "date": "2025-03-22",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/98d6f58ab0dafbb86b083a001561bb34.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTU0&eventinfo=OCB032225NC",
       "eventType": [
@@ -320,6 +330,7 @@
       "address": "Durham, NH",
       "fullAddress": "Johnson Theatre, University of New Hampshire - 30 Academic Way, Durham, NH 03824",
       "date": "2025-03-22",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/7504adad8bb96320eb3afdd4df6e1f60.jpeg",
       "link": "https://shamrockcupclassic.com/",
       "eventType": [
@@ -351,6 +362,7 @@
       "address": "Trussville, AL",
       "fullAddress": "Trussville Civic Center - 5381 Trussville Clay Rd., Trussville, AL 35173",
       "date": "2025-03-29",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/704afe073992cbe4813cae2f7715336f.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTU4&eventinfo=OCB032925AL",
       "eventType": [
@@ -382,6 +394,7 @@
       "address": "Buford, GA",
       "fullAddress": "Sylvia Beard Theatre - 2200 Buford Hwy NE, Buford, GA 30518",
       "date": "2025-03-29",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/a64c94baaf368e1840a1324e839230de.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTc5&eventinfo=OCB032925GA",
       "eventType": [
@@ -418,6 +431,7 @@
       "address": "Portland, ME",
       "fullAddress": "Stevens Square Community Center - 631 Stevens Ave, Portland, ME 04103",
       "date": "2025-04-06",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/7fa732b517cbed14a48843d74526c11a.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTU2&eventinfo=OCB040625ME",
       "eventType": [
@@ -449,6 +463,7 @@
       "address": "Renton, WA",
       "fullAddress": "Carco Theater - 1717 Maple Valley Hwy, Renton, WA 98057",
       "date": "2025-04-12",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/8b5040a8a5baf3e0e67386c2e3a9b903.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTg0&eventinfo=OCB041225WA",
       "eventType": [
@@ -481,6 +496,7 @@
       "address": "Denver, CO",
       "fullAddress": "JCC - 350 South Dahlia St, Denver, CO 80246",
       "date": "2025-04-12",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/6d0f846348a856321729a2f36734d1a7.jpeg",
       "link": "https://form.jotform.com/Tinissia/ocb-colorado-eclipse-041225",
       "eventType": [
@@ -512,6 +528,7 @@
       "address": "Bridgeport, CT",
       "fullAddress": "Bijou Theater - 275 Fairfield Ave, Bridgeport, CT 06604",
       "date": "2025-04-12",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/c2aee86157b4a40b78132f1e71a9e6f1.jpg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTU5&eventinfo=OCB041225CT",
       "eventType": [
@@ -542,6 +559,7 @@
       "address": "Chester, VA",
       "fullAddress": "Perkinson Center of the Arts - 11810 Centre St, Chester, VA 23831",
       "date": "2025-04-19",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/1cc3633c579a90cfdd895e64021e2163.jpg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTg2&eventinfo=OCB041925VA",
       "eventType": [
@@ -573,6 +591,7 @@
       "address": "Huntington, WV",
       "fullAddress": "Marshall University Student Center, Don Morris Room - 1 John Marshall Dr, Huntington, WV 25755",
       "date": "2025-04-19",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/f4552671f8909587cf485ea990207f3b.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTM0&eventinfo=OCB041925WV",
       "eventType": [
@@ -605,6 +624,7 @@
       "address": "Syracuse, NY",
       "fullAddress": "Carrier Theater (inside Civic Center) - 415/421 Montgomery St, Syracuse, NY 13202",
       "date": "2025-04-19",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/4daa3db355ef2b0e64b472968cb70f0d.jpeg",
       "link": "https://www.nysnatural.com/ocbbigeastnatural",
       "eventType": [
@@ -634,6 +654,7 @@
       "address": "Liberty, SC",
       "fullAddress": "Pickens Performing Arts Center - 314 W Main St, Liberty, SC 29657",
       "date": "2025-04-19",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/1e056d2b0ebd5c878c550da6ac5d3724.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTkw&eventinfo=OCB041925SC",
       "eventType": [
@@ -668,6 +689,7 @@
       "address": "DeKalb, IL",
       "fullAddress": "Egyptian Theatre - 135 N. 2nd St, DeKalb, IL 60115",
       "date": "2025-04-26",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/a3d68b461bd9d3533ee1dd3ce4628ed4.jpeg",
       "link": "https://ocbmidweststates.com/entry-form-spring/",
       "eventType": [
@@ -698,6 +720,7 @@
       "address": "Mars, PA",
       "fullAddress": "Discovery Christian Church - 174 Scharberry Lane, Mars, PA 16046",
       "date": "2025-04-26",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/23ce1851341ec1fa9e0c259de10bf87c.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTY2&eventinfo=OCB042625PA",
       "eventType": [
@@ -730,6 +753,7 @@
       "address": "Tucson, AZ",
       "fullAddress": "Berger Performing Arts Center - 1200 W Speedway Blvd, Tucson, AZ 85745",
       "date": "2025-04-26",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/168908dd3227b8358eababa07fcaf091.jpeg",
       "link": "https://bodybeautifulbronzingllc.com/events/ocb-southwest-showdown-april-26-2025-registration/",
       "eventType": [
@@ -763,6 +787,7 @@
       "address": "Port Saint Lucie, FL",
       "fullAddress": "Mid-Florida Event Center - 9221 SE Event Center Place, Port Saint Lucie, FL 34952",
       "date": "2025-04-27",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTU3&eventinfo=OCB042725FL",
       "eventType": [
@@ -795,6 +820,7 @@
       "address": "Knoxville, TN",
       "fullAddress": "Knoxville Catholic High School - 9245 Fox Lonas Rd, Knoxville, TN 37923",
       "date": "2025-05-03",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/0efe32849d230d7f53049ddc4a4b0c60.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTcz&eventinfo=OCB050325TN",
       "eventType": [
@@ -826,6 +852,7 @@
       "address": "Cape Cod, MA",
       "fullAddress": "Cape Cod, MA - Venue To Be Announced",
       "date": "2025-05-03",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/d56b9fc4b0f1be8871f5e1c40c0067e7.jpg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTYw&eventinfo=OCB050425MA",
       "eventType": [
@@ -846,7 +873,7 @@
       "phone": "774-836-0814"
     },
     {
-      "id": 27,
+      "id": 101,
       "position": [
         39.2525,
         -76.7133
@@ -856,6 +883,7 @@
       "address": "Baltimore, MD",
       "fullAddress": "CCBC \u2013 Catonsville Campus, Center for the Arts \u2013 Theater, 800 S. Rolling Road, Baltimore, MD 21228",
       "date": "05/09/2025 - 05/10/2025",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/6395ebd0f4b478145ecfbaf939454fa4.jpeg",
       "link": "https://franks.fitness/conquerinfo/",
       "eventType": [
@@ -892,6 +920,7 @@
       "address": "Kansas City, MO",
       "fullAddress": "The Medallion Theater at Park 39 - 300 E. 39th Street, Kansas City, MO 64111",
       "date": "2025-05-10",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTcx&eventinfo=OCB051025MO",
       "eventType": [
@@ -922,6 +951,7 @@
       "address": "Daytona Beach, FL",
       "fullAddress": "DSC\u2019s News Journal Center - 221 N Beach St, Daytona Beach, FL 32114",
       "date": "2025-05-10",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/c4b31ce7d95c75ca70d50c19aef08bf1.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTk0&eventinfo=OCB051025FL",
       "eventType": [
@@ -952,6 +982,7 @@
       "address": "Edmond, OK",
       "fullAddress": "Nigh University Center: 100 N University Dr. Edmond, OK",
       "date": "2025-05-17",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/2ba596643cbbbc20318224181fa46b28.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjAw&eventinfo=OCB051725OK",
       "eventType": [
@@ -982,6 +1013,7 @@
       "address": "Greensboro, NC",
       "fullAddress": "Piedmont Hall on the Greensboro Coliseum Campus - 2409 W Gate City Blvd, Greensboro, NC 27403",
       "date": "2025-05-17",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/f57a2f557b098c43f11ab969efe1504b.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTYy&eventinfo=OCB051725NC",
       "eventType": [
@@ -1016,6 +1048,7 @@
       "address": "Burlington, NJ",
       "fullAddress": "Burlington Township Schools Performing Arts Center, Burlington Twp High School - 610 Fountain Avenue, Burlington, NJ 08016",
       "date": "2025-05-17",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/e6cb2a3c14431b55aa50c06529eaa21b.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTg5&eventinfo=OCB051725NJ",
       "eventType": [
@@ -1047,6 +1080,7 @@
       "address": "Bloomington, MN",
       "fullAddress": "Thomas Jefferson Auditorium - 4001 West 102nd Street, Bloomington, MN 55347",
       "date": "2025-05-24",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/90794e3b050f815354e3e29e977a88ab.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTg4&eventinfo=OCB052425MN",
       "eventType": [
@@ -1077,6 +1111,7 @@
       "address": "Las Vegas, NV",
       "fullAddress": "Plaza Hotel & Casino, 1 Main St, Las Vegas, NV 89101",
       "date": "2025-05-24",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/437d7d1d97917cd627a34a6a0fb41136.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTgw&eventinfo=OCB052425NV",
       "eventType": [
@@ -1112,6 +1147,7 @@
       "address": "Columbus, OH",
       "fullAddress": "Ohio Dominican College Theater, 1216 Sunbury Rd, Columbus, OH 43219",
       "date": "2025-05-24",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/c8c41c4a18675a74e01c8a20e8a0f662.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTgy&eventinfo=OCB052425OH",
       "eventType": [
@@ -1146,6 +1182,7 @@
       "address": "Rochester, NY",
       "fullAddress": "Louis S. Wolk JCC Of Greater Rochester, 1200 Edgewood Ave, Rochester, NY 14618",
       "date": "2025-06-07",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/thumb/b6a1085a27ab7bff7550f8a3bd017df8.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTcy&eventinfo=OCB060725NY",
       "eventType": [
@@ -1181,6 +1218,7 @@
       "address": "Grand Rapids, MI",
       "fullAddress": "East Grand Rapids High School Performing Arts Center, 2211 Lake Dr SE, Grand Rapids, MI 49506",
       "date": "2025-06-07",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/f47d0ad31c4c49061b9e505593e3db98.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTYx&eventinfo=OCB060725MI",
       "eventType": [
@@ -1215,6 +1253,7 @@
       "address": "Fargo, ND",
       "fullAddress": "NDSU Festival Hall, 1511 12th Ave N, Fargo, ND 58102",
       "date": "2025-06-07",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/8d6dc35e506fc23349dd10ee68dabb64.jpeg",
       "link": "https://www.nxnevents.com/natural-spartan",
       "eventType": [
@@ -1249,6 +1288,7 @@
       "address": "Greenville, SC",
       "fullAddress": "Greenville Technical College, 506 S. Pleasantburg Drive, Dreisbach/Anderson Student Success Center Building #102 Auditorium, Greenville, SC 29607",
       "date": "2025-06-07",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/0f840be9b8db4d3fbd5ba2ce59211f55.jpeg",
       "link": "https://form.jotform.com/232114248094148",
       "eventType": [
@@ -1293,6 +1333,7 @@
       "address": "Norfolk, VA",
       "fullAddress": "Old Dominion University Theater, Norfolk, VA",
       "date": "2025-06-07",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTY5&eventinfo=OCB060725VA",
       "eventType": [
@@ -1330,6 +1371,7 @@
       "address": "Ipswich, QLD, Australia",
       "fullAddress": "Ipswich Civic Centre, 50 Nicholas Street, Ipswich, QLD, Australia",
       "date": "2025-06-08",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTg3&eventinfo=OCB060825QLD",
       "eventType": [
@@ -1372,6 +1414,7 @@
       "address": "Phoenix, AZ",
       "fullAddress": "The Kroc Center, 1375 E Broadway Rd, Phoenix, AZ 85040",
       "date": "2025-06-14",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/64223ccf70bbb65a3a4aceac37e21016.jpeg",
       "link": "https://bodybeautifulbronzingllc.com/events/ocb-arizona-scorcher-pro-am-june-14-2025-registration/",
       "eventType": [
@@ -1425,6 +1468,7 @@
       "address": "Madison, WI",
       "fullAddress": "Monona Terrace Community and Convention Center, One John Nolen Drive, Madison, WI 53703",
       "date": "2025-06-21",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/aa169b49b583a2b5af89203c2b78c67c.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTYz&eventinfo=OCB062125WI",
       "eventType": [
@@ -1464,6 +1508,7 @@
       "address": "Harrisburg, PA",
       "fullAddress": "Scottish Rite Theatre, 2701 N 3rd St, Harrisburg, PA 17110",
       "date": "2025-06-21",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTg5&eventinfo=OCB062125PA",
       "eventType": [
@@ -1503,6 +1548,7 @@
       "address": "Lexington, MA",
       "fullAddress": "Cary Hall, 1605 Massachusetts Ave, Lexington, MA 02420",
       "date": "2025-06-21",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/cbb6a3b884f4f88b3a8e3d44c636cbd8.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTY3&eventinfo=OCB062125MA",
       "eventType": [
@@ -1551,6 +1597,7 @@
       "address": "Oakland, CA",
       "fullAddress": "Truve, 420 14th St, Oakland, CA 94612",
       "date": "2025-06-28",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjEy&eventinfo=OCB062825CA",
       "eventType": [
@@ -1596,6 +1643,7 @@
       "address": "Williamsburg, VA",
       "fullAddress": "The Crosswalk, 7575 Richmond Road, Williamsburg, VA",
       "date": "2025-06-28",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/892c91e0a653ba19df81a90f89d99bcd.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTY1&eventinfo=OCB062825VA",
       "eventType": [
@@ -1640,6 +1688,7 @@
       "address": "Bloomington, MN",
       "fullAddress": "Minnesota Masonic Heritage Center, 11411 Masonic Home Dr, Bloomington, MN 55437",
       "date": "2025-06-28",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/2f885d0fbe2e131bfc9d98363e55d1d4.jpeg",
       "link": "https://www.nxnevents.com/loscup",
       "eventType": [
@@ -1676,6 +1725,7 @@
       "address": "Murfreesboro, TN",
       "fullAddress": "Washington Theater, 521 Dr Martin Luther King Jr Blvd, Murfreesboro, TN 37130",
       "date": "2025-07-12",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTgx&eventinfo=OCB071225TN",
       "eventType": [
@@ -1721,6 +1771,7 @@
       "address": "Orlando, FL",
       "fullAddress": "Orlando Museum of Art, 2416 North Mills Avenue, Orlando, FL",
       "date": "2025-07-19",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/1ce927f875864094e3906a4a0b5ece68.jpeg",
       "link": "https://form.jotform.com/232164506020139",
       "eventType": [
@@ -1764,6 +1815,7 @@
       "address": "Centerville, OH",
       "fullAddress": "Sinclair Community College \u2013 Centerville Campus, 5800 Clyo Rd, Centerville, OH 45459",
       "date": "2025-07-19",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/da0d1111d2dc5d489242e60ebcbaf988.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTgz&eventinfo=OCB071925OH",
       "eventType": [
@@ -1808,6 +1860,7 @@
       "address": "St. Louis, MO",
       "fullAddress": "Ladue Performing Arts Center, 1201 South Warson Road, St. Louis, MO 63124",
       "date": "2025-07-26",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjA0&eventinfo=OCB072625MO",
       "eventType": [
@@ -1851,6 +1904,7 @@
       "address": "Phoenix, AZ",
       "fullAddress": "Venue to be announced",
       "date": "August TBA, 2025",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://www.petrosproperformance.com/ocbslayerclassic",
       "eventType": [
@@ -1893,6 +1947,7 @@
       "address": "Louisville, KY",
       "fullAddress": "Kentucky Country Day School, 4100 Springdale Road, Louisville, KY 40241",
       "date": "2025-08-02",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/0d0871f0806eae32d30983b62252da50.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTcw&eventinfo=OCB080225KY",
       "eventType": [
@@ -1937,6 +1992,7 @@
       "address": "New York, NY",
       "fullAddress": "The Kumble Theater for the Performing Arts, LIU Brooklyn, New York, NY",
       "date": "2025-08-02",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/c4015b7f368e6b4871809f49debe0579.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTk2&eventinfo=OCB080225NY",
       "eventType": [
@@ -1980,6 +2036,7 @@
       "address": "Buford, GA",
       "fullAddress": "Buford Community Center, Sylvia Beard Theater, 2200 Buford Hwy NE, Buford, GA 30518",
       "date": "2025-08-02",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/3df1d4b96d8976ff5986393e8767f5b2.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTky&eventinfo=OCB080225GA",
       "eventType": [
@@ -2023,6 +2080,7 @@
       "address": "Edmond, OK",
       "fullAddress": "Nigh University Center, 100 N University Dr, Edmond, OK",
       "date": "2025-08-09",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjA4&eventinfo=OCB080925OK",
       "eventType": [
@@ -2067,6 +2125,7 @@
       "address": "Bowie, MD",
       "fullAddress": "Bowie Performing Arts Center, 15222 Annapolis Rd, Bowie, MD 20715",
       "date": "2025-08-09",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjA5&eventinfo=OCB080925DC",
       "eventType": [
@@ -2119,6 +2178,7 @@
       "address": "Sanborn, NY",
       "fullAddress": "SUNY Niagara, 3111 Saunders Settlement Rd, Sanborn, NY 14132",
       "date": "2025-08-16",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/6602294be910b1e3c4571bd98c4d5484.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjMx&eventinfo=OCB081625NY",
       "eventType": [
@@ -2164,6 +2224,7 @@
       "address": "Denver, CO",
       "fullAddress": "JCC Denver, 350 South Dahlia St, Denver, CO 80246",
       "date": "2025-08-16",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/3e89ebdb49f712c7d90d1b39e348bbbf.jpeg",
       "link": "https://form.jotform.com/Tinissia/am---ocb-colorado-natural-AM",
       "eventType": [
@@ -2215,6 +2276,7 @@
       "address": "Chicago, IL",
       "fullAddress": "Athenaeum Theatre, 2936 N. Southport Ave., Chicago, IL 60657",
       "date": "2025-08-16",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/b7892fb3c2f009c65f686f6355c895b5.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTkz&eventinfo=OCB081625IL",
       "eventType": [
@@ -2258,6 +2320,7 @@
       "address": "Burlington, NJ",
       "fullAddress": "Burlington Township Performing Arts Center, 610 Fountain Ave, Burlington, NJ 08016",
       "date": "2025-08-23",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjEz&eventinfo=OCB082325NJ",
       "eventType": [
@@ -2301,6 +2364,7 @@
       "address": "Highland Hills, OH",
       "fullAddress": "Cuyahoga Community College Eastern Campus, 4250 Richmond Rd, Highland Hills, OH 44122",
       "date": "2025-08-23",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/e820a45f1dfc7b95282d10b6087e11c0.jpg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTk1&eventinfo=OCB082325OH",
       "eventType": [
@@ -2345,6 +2409,7 @@
       "address": "Hilton Head, SC",
       "fullAddress": "Seahawk Cultural Center, 70 Wilborn Rd, Hilton Head, SC 29926",
       "date": "2025-08-30",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/acf4b89d3d503d8252c9c4ba75ddbf6d.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTUw&eventinfo=OCB083025SC",
       "eventType": [
@@ -2390,6 +2455,7 @@
       "address": "Panama City, FL",
       "fullAddress": "Barbara W Nelson Fine Arts Center, Bay High School, 1200 Harrison Ave, Panama City, FL 32401",
       "date": "2025-08-30",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjEw&eventinfo=OCB080925FL",
       "eventType": [
@@ -2434,6 +2500,7 @@
       "address": "Upton, MA",
       "fullAddress": "Nipmuc Regional High School, 90 Pleasant St, Upton, MA 01568",
       "date": "2025-09-06",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/d240e3d38a8882ecad8633c8f9c78c9b.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjE0&eventinfo=OCB090625MA",
       "eventType": [
@@ -2477,6 +2544,7 @@
       "address": "Norfolk, VA",
       "fullAddress": "Kroc Center of Norfolk, 1401 Ballentine Blvd, Norfolk, VA 23504",
       "date": "2025-09-06",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/74bba22728b6185eec06286af6bec36d.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTkx&eventinfo=OCB090625VA",
       "eventType": [
@@ -2531,6 +2599,7 @@
       "address": "Grand Rapids, MI",
       "fullAddress": "East Grand Rapids High School Performing Arts Center, 2211 Lake Dr SE, Grand Rapids, MI 49506",
       "date": "2025-09-13",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/d045c59a90d7587d8d671b5f5aec4e7c.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTc1&eventinfo=OCB091325MI",
       "eventType": [
@@ -2575,6 +2644,7 @@
       "address": "Schenectady, NY",
       "fullAddress": "GE Theatre at Proctors, 432 State Street, Schenectady, NY 12305",
       "date": "2025-09-14",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://linktr.ee/capitalcitynatural",
       "eventType": [
@@ -2612,6 +2682,7 @@
       "address": "Knoxville, TN",
       "fullAddress": null,
       "date": "2025-09-13",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjAz&eventinfo=OCB091325TN",
       "eventType": [
@@ -2655,6 +2726,7 @@
       "address": "Bloomington, MN",
       "fullAddress": "Minnesota Masonic Heritage Center, 11411 Masonic Home Dr, Bloomington, MN 55437",
       "date": "2025-09-13",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/92262bf907af914b95a0fc33c3f33bf6.jpeg",
       "link": "https://www.nxnevents.com/naturalviking",
       "eventType": [
@@ -2698,6 +2770,7 @@
       "address": "Madison, WI",
       "fullAddress": "Monona Terrace Community and Convention Center, One John Nolen Drive, Madison, WI 53703",
       "date": "2025-09-20",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/1f4477bad7af3616c1f933a02bfabe4e.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTc3&eventinfo=OCB092025WI",
       "eventType": [
@@ -2742,6 +2815,7 @@
       "address": "Colorado Springs, CO",
       "fullAddress": "Venue To Be Announced, Colorado Springs, CO",
       "date": "2025-10-04",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://form.jotform.com/243295575948171",
       "eventType": [
@@ -2776,6 +2850,7 @@
       "address": "Mars, PA",
       "fullAddress": "Discovery Christian Church, 174 Scharberry Lane, Mars, PA 16046",
       "date": "2025-10-04",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjE4&eventinfo=OCB100425PA",
       "eventType": [
@@ -2820,6 +2895,7 @@
       "address": "Renton, WA",
       "fullAddress": "Carco Theater, 1717 Maple Valley Hwy, Renton, WA 98057",
       "date": "2025-10-04",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/9c01802ddb981e6bcfbec0f0516b8e35.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjE3&eventinfo=OCB100425WA",
       "eventType": [
@@ -2863,6 +2939,7 @@
       "address": "Port Saint Lucie, FL",
       "fullAddress": "Mid-Florida Event Center, 9221 SE Event Center Place, Port Saint Lucie, FL 34952",
       "date": "2025-10-05",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTc4&eventinfo=OCB100525FL",
       "eventType": [
@@ -2911,6 +2988,7 @@
       "address": "Indianapolis, IN",
       "fullAddress": "Theater Of The Performing Arts, University of Indianapolis Campus, 1400 E. Hanna Ave., Indianapolis, IN 46227",
       "date": "2025-10-11",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/4e0cb6fb5fb446d1c92ede2ed8780188.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjI2&eventinfo=OCB101125IN",
       "eventType": [
@@ -2954,6 +3032,7 @@
       "address": "Brooklyn Park, MD",
       "fullAddress": "Chesapeake Arts Center, 194 Hammonds Ln, Brooklyn Park, MD 21225",
       "date": "2025-10-11",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjE2&eventinfo=OCB101125MD",
       "eventType": [
@@ -3008,6 +3087,7 @@
       "address": "Barnstable, MA",
       "fullAddress": "Barnstable High School (Knight Hall), 774 West Main St., Hyannis, MA 02601",
       "date": "2025-10-11",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTk5&eventinfo=OCB101125MA",
       "eventType": [
@@ -3051,6 +3131,7 @@
       "address": "North Myrtle Beach, SC",
       "fullAddress": "Greg Rowles Legacy Theatre, 701 Main Street, North Myrtle Beach, SC 29582",
       "date": "2025-10-11",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/89fcd07f20b6785b92134bd6c1d0fa42.jpeg",
       "link": "https://ocbstoneclassicbodybuilding.com/",
       "eventType": [
@@ -3086,6 +3167,7 @@
       "address": "Sioux Falls, SD",
       "fullAddress": "Orpheum Theater, 315 N Phillips Ave, Sioux Falls, SD 57104",
       "date": "2025-10-11",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/b55ec28c52d5f6205684a473a2193564.jpeg",
       "link": "https://www.nxnevents.com/showdown",
       "eventType": [
@@ -3123,6 +3205,7 @@
       "address": "Hermosa Beach, CA",
       "fullAddress": "Hermosa Beach Community Center, 710 Pier Ave, Hermosa Beach, CA 90254",
       "date": "2025-10-18",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/1c1d4df596d01da60385f0bb17a4a9e0.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTk3&eventinfo=OCB101825CA",
       "eventType": [
@@ -3168,6 +3251,7 @@
       "address": "London, UK",
       "fullAddress": "To Be Announced",
       "date": "2025-10-18",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/3cef96dcc9b8035d23f69e30bb19218a.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTQ8&eventinfo=OCB101825UK",
       "eventType": [
@@ -3211,6 +3295,7 @@
       "address": "Omaha, NE",
       "fullAddress": "Jewish Community Center of Omaha, 333 South 132nd Street, Omaha, NE 68154",
       "date": "2025-10-25",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/8f468c873a32bb0619eaeb2050ba45d1.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NTk4&eventinfo=OCB102525NE",
       "eventType": [
@@ -3245,6 +3330,7 @@
       "address": "Murfreesboro, TN",
       "fullAddress": "Washington Theater, 521 Dr Martin Luther King Jr Blvd, Murfreesboro, TN 37130",
       "date": "2025-11-01",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjI3&eventinfo=OCB110125TN",
       "eventType": [
@@ -3290,6 +3376,7 @@
       "address": "Doylestown, PA",
       "fullAddress": "Delaware Valley University Life Sciences Bldg., 700 E Butler Ave, Doylestown, PA 18901",
       "date": "2025-11-02",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjI5&eventinfo=OCB110125PA",
       "eventType": [
@@ -3333,6 +3420,7 @@
       "address": "Fayetteville, NC",
       "fullAddress": "Westover High School, 277 Bonanza Dr, Fayetteville, NC 28303",
       "date": "2025-11-08",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjMw&eventinfo=OCB110825NC",
       "eventType": [
@@ -3377,6 +3465,7 @@
       "address": "Tampa, FL",
       "fullAddress": "To Be Announced",
       "date": "2025-11-08",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "eventType": [
         "Amateur Competition",
@@ -3422,6 +3511,7 @@
       "address": "Syracuse, NY",
       "fullAddress": "To Be Announced",
       "date": "2025-11-08",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "eventType": null,
       "divisions": null,
@@ -3444,6 +3534,7 @@
       "address": "Hamilton, OH",
       "fullAddress": "Fitton Center for the Creative Arts, 101 South Monument Ave, Hamilton, OH",
       "date": "2025-11-15",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjIx&eventinfo=OCB111525OH",
       "eventType": [
@@ -3488,6 +3579,7 @@
       "address": "Hamilton, OH",
       "fullAddress": "Fitton Center for the Creative Arts, 101 South Monument Ave, Hamilton, OH",
       "date": "2025-11-15",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/e744f91c29ec99f0e662c9177946c627.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjIx&eventinfo=OCB111525OH",
       "eventType": [
@@ -3532,6 +3624,7 @@
       "address": "Boise, ID",
       "fullAddress": "To Be Announced",
       "date": "2025-11-22",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjI4&eventinfo=OCB110125ID",
       "eventType": [
@@ -3574,6 +3667,7 @@
       "address": "DeKalb, IL",
       "fullAddress": "Egyptian Theatre, 135 N. 2nd St., DeKalb, IL 60115",
       "date": "2025-11-22",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbmidweststates.com/entry-form/",
       "eventType": [
@@ -3608,6 +3702,7 @@
       "address": "Woonsocket, RI",
       "fullAddress": "Woonsocket High School, 777 Cass Ave, Woonsocket, RI 02895",
       "date": "2025-11-22",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/ca75910166da03ff9d4655a0338e6b09.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjE5&eventinfo=OCB112225RI",
       "eventType": [
@@ -3661,6 +3756,7 @@
       "address": "Virginia Beach, VA",
       "fullAddress": "To Be Announced",
       "date": "2025-11-22",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjI1&eventinfo=OCB112225VA",
       "eventType": [
@@ -3695,40 +3791,7 @@
       "address": "Tucson, AZ",
       "fullAddress": "To Be Announced",
       "date": "2025-12-06",
-      "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "link": "https://bodybeautifulbronzingllc.com/competition-events/",
-      "eventType": [
-        "Amateur Competition",
-        "Pro Qualifier"
-      ],
-      "divisions": [
-        "Men'S Bodybuilding",
-        "Men'S Physique",
-        "Men'S Classic Physique",
-        "Women'S Physique",
-        "Figure",
-        "Bikini",
-        "Women's Wellness"
-      ],
-      "proPayouts": null,
-      "promoter": null,
-      "email": null,
-      "phone": null,
-      "tickets": null,
-      "entryFees": null,
-      "deadlines": null
-    },
-    {
-      "id": 96,
-      "position": [
-        32.1558027,
-        -111.0489587
-      ],
-      "popupText": "  OCB Desert Valley Natural (Yorton Cup Qualifier, OCB Pro Qualifier)",
-      "name": " OCB Desert Valley Natural (Yorton Cup Qualifier, OCB Pro Qualifier)",
-      "address": "Tucson, AZ",
-      "fullAddress": "To Be Announced",
-      "date": "2025-12-06",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://bodybeautifulbronzingllc.com/competition-events/",
       "eventType": [
@@ -3755,6 +3818,41 @@
     {
       "id": 97,
       "position": [
+        32.1558027,
+        -111.0489587
+      ],
+      "popupText": "  OCB Desert Valley Natural (Yorton Cup Qualifier, OCB Pro Qualifier)",
+      "name": " OCB Desert Valley Natural (Yorton Cup Qualifier, OCB Pro Qualifier)",
+      "address": "Tucson, AZ",
+      "fullAddress": "To Be Announced",
+      "date": "2025-12-06",
+      "federation":"OCB",
+      "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "link": "https://bodybeautifulbronzingllc.com/competition-events/",
+      "eventType": [
+        "Amateur Competition",
+        "Pro Qualifier"
+      ],
+      "divisions": [
+        "Men'S Bodybuilding",
+        "Men'S Physique",
+        "Men'S Classic Physique",
+        "Women'S Physique",
+        "Figure",
+        "Bikini",
+        "Women's Wellness"
+      ],
+      "proPayouts": null,
+      "promoter": null,
+      "email": null,
+      "phone": null,
+      "tickets": null,
+      "entryFees": null,
+      "deadlines": null
+    },
+    {
+      "id": 98,
+      "position": [
         29.4285,
         -98.4861
       ],
@@ -3763,6 +3861,7 @@
       "address": "San Antonio, TX",
       "fullAddress": "Scottish Rite Auditorium, 308 Ave. E, San Antonio, TX 78205",
       "date": "2025-12-06",
+      "federation":"OCB",
       "flyers": "https://ocbonline.com/flyer_pics/cc1aa436277138f61cda703991069eaf.jpeg",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjI0&eventinfo=OCB120625TX",
       "eventType": [
@@ -3796,7 +3895,7 @@
       "deadlines": "December 1, 2025"
     },
     {
-      "id": 98,
+      "id": 99,
       "position": [
         35.2271,
         -80.8431
@@ -3806,6 +3905,7 @@
       "address": "Charlotte, NC",
       "fullAddress": "Porter Ridge High School, 2839 Ridge Rd, Indian Trail, NC 28079",
       "date": "2025-12-06",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjIz&eventinfo=OCB120625NC",
       "eventType": [
@@ -3840,7 +3940,7 @@
       "deadlines": "November 29, 2025"
     },
     {
-      "id": 99,
+      "id": 100,
       "position": [
         37.3565,
         -77.4411
@@ -3850,6 +3950,7 @@
       "address": "Chester, VA",
       "fullAddress": "Cultural Center of India, 6641 Ironbridge Pkwy, Chester, VA 23831",
       "date": "2025-12-13",
+      "federation":"OCB",
       "flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "link": "https://ocbonline.com/events/eventinfo.php?event=NjEx&eventinfo=OCB121325VA",
       "eventType": [
