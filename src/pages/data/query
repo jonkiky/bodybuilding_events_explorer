@@ -1,0 +1,48 @@
+
+"flyers": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  
+
+Capture event details information from given links and 
+caputre the information output as json object
+
+{
+  "id": 54,
+  "position": [38.2856, -85.5905],
+  "popupText": "OCB Kentucky Natural Championships",
+  "name": "OCB Kentucky Natural Championships",
+  "address": "Louisville, KY",
+  "fullAddress": "Kentucky Country Day School, 4100 Springdale Road, Louisville, KY 40241",
+  "date": "08/02/2025",
+  "flyers": "https://ocbonline.com/flyer_pics/0d0871f0806eae32d30983b62252da50.jpeg",
+  "link": "https://ocbonline.com/events/eventinfo.php?event=NTcw&eventinfo=OCB080225KY",
+  "eventType": ["Amateur Competition", "Pro Qualifier"],
+  "divisions": [
+    "Bikini",
+    "Women's Wellness",
+    "Figure",
+    "Women's Physique",
+    "Men's Physique",
+    "Men's Classic Physique",
+    "Men's Bodybuilding"
+  ],
+  "proPayouts": null,
+  "promoter": null,
+  "email": "kentuckyocb@gmail.com",
+  "phone": null,
+  "tickets": {
+    "Adult General Admission": "$50",
+    "Under Age 12 General Admission": "$20",
+    "Age 2 and under": "Free",
+    "Coach or Assistant Pass (backstage access)": "$100 (only applicable to those helping a competitor prepare backstage; one assistant max per competitor is permitted)"
+  },
+  "entryFees": {
+    "Entry Fee": "$110",
+    "Additional Class Entry": "$60",
+    "Late Entry Fee": "$50",
+    "Final Entry Deadline": "July 29th"
+  },
+  "deadlines": "July 29th"
+}
+
+Links are here:
+https://ocbonline.com/events/eventinfo.php?event=NTk2&eventinfo=OCB080225NY

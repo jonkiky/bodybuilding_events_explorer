@@ -18,13 +18,13 @@ const Header = () => {
 
         {/* Buttons */}
         <div className="hidden sm:flex space-x-2 pl-8">
-          <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
+          {/*<button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
             OCB
           </button>
           <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
             WNBF
           </button>
-          {/*<button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
+          <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
             NPC
           </button>
           <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">

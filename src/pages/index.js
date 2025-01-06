@@ -2,13 +2,17 @@ import React, { useState, useRef } from 'react';
 import Head from 'next/head';
 import Header from '@components/Header';
 import Map from '@components/Map';
+import EventCard from '@components/EventCard';
 import styles from '@styles/Home.module.scss';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
+import { data } from './data/data.json';
+
 
 const DEFAULT_CENTER = [39.725810, -95.024968];
 
 export default function Home() {
+  let markerData = data;
   const [selectedMarker, setSelectedMarker] = useState(null);
   const [eventType, setEventType] = useState("Event Type");
   const [divisionType, setDivisionType] = useState("Divisions");
@@ -35,14 +39,7 @@ export default function Home() {
   const contentRefs = useRef({});
 
   // Sample data for markers
-  const markerData = [
-    { id: 1, position: [37.372040, -76.779449], popupText: '7575 Richmond Road, Williamsburg, VA 23188' },
-    { id: 2, position: [39.256715, -76.731086], popupText: '800 S. Rolling Road Baltimore, MD 21228' },
-    { id: 3, position: [39.256715, -76.731086], popupText: '800 S. Rolling Road Baltimore, MD 21228' },
-    { id: 4, position: [39.256715, -76.731086], popupText: '800 S. Rolling Road Baltimore, MD 21228' },
-    { id: 5, position: [39.256715, -76.731086], popupText: '800 S. Rolling Road Baltimore, MD 21228' },
-    { id: 6, position: [39.256715, -76.731086], popupText: '800 S. Rolling Road Baltimore, MD 21228' },
-  ];
+
 
   const handleMarkerClick = (marker) => {
     setSelectedMarker(marker);
@@ -53,31 +50,6 @@ export default function Home() {
       container.scrollTop = contentElement.offsetTop;
     }
   };
-
-
-  const card =
-  <div className="max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-md flex overflow-hidden">
-      {/* Image Section */}
-      <img
-        src="https://ocbonline.com/flyer_pics/4b0250793549726d5c1ea3906726ebfe.webp"
-        className="w-40 h-auto object-cover"
-      />
-      {/* Content Section */}
-      <div className="p-2 flex flex-col justify-between">
-        <div>
-          <h3 className="text-lg font-bold text-gray-800">OCB Winter Classic </h3>
-          <p className="text-sm">Tallahassee, FL</p>
-            <p className="text-sm text-gray-800">January 18, 2025</p>
-        </div>
-        <div className="mt-2">
-          <div className="mt-2 flex items-center text-gray-800">
-              <button className="block w-full  px-4 py-2 text-sm bg-gray-700 rounded-lg text-white">
-                    Event Website
-               </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
   return (
@@ -231,17 +203,19 @@ export default function Home() {
 
           <div className="p-3">
             <div className="space-y-1">
-              {markerData.map((marker) => (
-                <div
-                  key={marker.id}
-                  ref={(el) => (contentRefs.current[marker.id] = el)}
-                  className={`p-1  ${
-                    selectedMarker?.id === marker.id ? 'bg-blue-100' : ''
-                  }`}
-                >
-                {card}
-                </div>
-              ))}
+             {markerData && markerData.length > 0 ? (
+                markerData.map((marker) => (
+                  <div
+                    key={marker.id}
+                    ref={(el) => (contentRefs.current[marker.id] = el)}
+                    className={`p-1 ${
+                      selectedMarker?.id === marker.id ? 'bg-blue-100' : ''
+                    }`}
+                  >
+                    <EventCard data={marker} />
+                  </div>
+                ))
+              ) : ""}
             </div>
           </div>
         </div>
@@ -257,7 +231,8 @@ export default function Home() {
                   attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
                 />
 
-                {markerData.map((marker) => (
+                 {markerData && markerData.length > 0 ? (
+                  markerData.map((marker) => (
                   <Marker
                     key={marker.id}
                     position={marker.position}
@@ -267,10 +242,10 @@ export default function Home() {
                   >
                     <Popup>
                       {marker.popupText}
-                      {selectedMarker?.id === marker.id && <div>You clicked this marker!</div>}
+                      {selectedMarker?.id === marker.id}
                     </Popup>
                   </Marker>
-                ))}
+                ))):""}
               </>
             )}
           </Map>
