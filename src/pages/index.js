@@ -11,18 +11,60 @@ import { data } from './data/data.json';
 
 const DEFAULT_CENTER = [39.725810, -95.024968];
 
+
 export default function Home() {
-  let markerData = data;
+  
+  let rawData = data;
   const [selectedMarker, setSelectedMarker] = useState(null);
   const [eventType, setEventType] = useState("Event Type");
   const [divisionType, setDivisionType] = useState("Divisions");
   const [dateRange, setDateRange] = useState({ start: "", end: "" });
 
+  // Sample data for markers
+  const getFilteredData = (data) => {
+  return data
+    .filter((marker) => {
+      if (!marker) return false; // Skip null or undefined markers
+
+      const eventTypeMatch =
+        eventType === "Event Type" || eventType === "Any Event Type" || marker.eventType?.includes(eventType);
+      const divisionTypeMatch =
+        divisionType === "Divisions" || divisionType === "Any Division" || marker.divisions?.includes(divisionType);
+
+      const markerDate = new Date(marker.date);
+      const startDate = dateRange.start ? new Date(dateRange.start) : null;
+      const endDate = dateRange.end ? new Date(dateRange.end) : null;
+
+      const dateRangeMatch =
+        (!startDate || markerDate >= startDate) &&
+        (!endDate || markerDate <= endDate);
+
+      return eventTypeMatch && divisionTypeMatch && dateRangeMatch;
+    })
+    .sort((a, b) => {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return dateA - dateB; // Ascending order
+    });
+};
+
+  // let markerData = data;
+  let markerData = getFilteredData(rawData);
+
+
   const handleDropdownSelect = (setter, item) => {
     setter(item);
   };
 
-  const eventTypeOptions = ["Any Event Type", "Amateur Competitions", "Pro Competitions", "WorkShop"];
+  const eventTypeOptions = [
+  "Any Event Type", 
+  "Amateur Competition",
+  "Pro Competition",
+  "Pro Qualifier",
+  "Yorton Cup Qualifier",
+  "Body Transformation Challenge",
+  "workshop"];
+
   const divisionOptions = [
     "Any Division",
     "Men's Bodybuilding",
@@ -31,16 +73,24 @@ export default function Home() {
     "Women's Physique",
     "Figure",
     "Bikini",
-    "Wellness",
-    "Debut"
+    "Women's Wellness",
+    "Iron Angels",
+    "Transformation",
+    "Heroes",
+    "Pro Men's Physique",
+    "Pro Bikini",
+    "Pro Women's Physique",
+    "Pro Figure",
+    "Pro Men's Classic Physique",
+    "Pro Women's Wellness",
+    "Body Transformation Challenge",
+    "Teen"
   ];
 
   // Reference for scrolling
   const contentRefs = useRef({});
 
-  // Sample data for markers
-
-
+ 
   const handleMarkerClick = (marker) => {
     setSelectedMarker(marker);
     // Scroll to related content
