@@ -53,7 +53,7 @@ const Header = (data) => {
 
       {/* GitHub Button */}
       <div className="hidden sm:block">
-        <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <Link href="https://github.com/jonkiky/bodybuilding_events_explorer" target="_blank" rel="noopener noreferrer">
           <button
             className="bg-white flex items-center whitespace-nowrap"
             aria-label="Go to GitHub"

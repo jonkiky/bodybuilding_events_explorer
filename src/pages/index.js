@@ -22,7 +22,7 @@ export default function Home() {
   const [federation, setFederation] = useState("Federation/Competition"); // New State for Competitions/Federations
 
    // Filter options for Competitions/Federations
-  const federationOptions = ["All", "OCB", "WNBF", "NPC", "IFBB"];
+  const federationOptions = ["All", "OCB"];
 
 
 
@@ -33,9 +33,9 @@ export default function Home() {
       if (!marker) return false; // Skip null or undefined markers
 
       const eventTypeMatch =
-        eventType === "Event Type" || eventType === "Any Event Type" || marker.eventType?.includes(eventType);
+        eventType === "Event Type" || eventType === "All Event Type" || marker.eventType?.includes(eventType);
       const divisionTypeMatch =
-        divisionType === "Divisions" || divisionType === "Any Division" || marker.divisions?.includes(divisionType);
+        divisionType === "Divisions" || divisionType === "All Division" || marker.divisions?.includes(divisionType);
        const federationMatch =
           federation === "Federation/Competition" || federation === "All" || marker.federation?.includes(federation); // New Filter Logic
 
@@ -65,7 +65,7 @@ export default function Home() {
   };
 
   const eventTypeOptions = [
-  "Any Event Type", 
+  "All Event Type", 
   "Amateur Competition",
   "Pro Competition",
   "Pro Qualifier",
@@ -74,7 +74,7 @@ export default function Home() {
   "workshop"];
 
   const divisionOptions = [
-    "Any Division",
+    "All Division",
     "Men's Bodybuilding",
     "Men's Physique",
     "Men's Classic Physique",

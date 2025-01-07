@@ -1,19 +1,37 @@
-# 🍃 Next.js Leaflet Starter
+# Bodybuilding Events Explorer
 
-Jumpstart your new Next.js mapping project with Leaflet!
+## 🚀 Introduction
 
-## ⚡ Quick Deploy
-[![Deploy with Vercel Now](https://zeit.co/button)](https://vercel.com/import/project?template=https://github.com/colbyfayock/next-leaflet-starter) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/colbyfayock/next-leaflet-starter)
+**Bodybuilding Events Explorer** is a platform designed to help bodybuilders, fitness enthusiasts, and competitors find the right competitions or shows to join. Whether you're a seasoned professional or an amateur looking to make your debut, this tool provides a centralized hub for exploring bodybuilding events based on your preferences, including event type, division, federation, and date range.
+
+## 🏋️‍♂️ Features
+
+- **Event Filtering**: Filter events by:
+  - Event Type (e.g., Amateur Competition, Pro Competition, Workshops)
+  - Division (e.g., Men's Physique, Bikini, Pro Classic Physique)
+  - Federations (e.g., OCB, NPC, IFBB)
+  - Date Range
+- **Interactive Map**: View event locations on an interactive map for better planning.
+- **Event Details**: Access detailed information about each event, including:
+  - Event Name
+  - Date & Time
+  - Location
+  - Divisions and Categories
+  - Federation
+- **Mobile-Friendly Design**: Easy to use on any device, whether you're at home or on the go.
+- **Seamless Navigation**: Scrollable event list and click-to-highlight map markers for better exploration.
 
 
-## 🧰 What This Includes
-* [Next.js](https://nextjs.org/)
-* [Leaflet](https://leafletjs.com/)
-* [React Leaflet](https://react-leaflet.js.org)
+## 🛠️ Installation
 
-## 🚀 Getting Started
+To set up the project locally, follow these steps:
 
-### Requirements
+### Prerequisites
+
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
 
 ### Quick Start
 
