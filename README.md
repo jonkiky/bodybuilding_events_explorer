@@ -9,7 +9,7 @@
 - **Event Filtering**: Filter events by:
   - Event Type (e.g., Amateur Competition, Pro Competition, Workshops)
   - Division (e.g., Men's Physique, Bikini, Pro Classic Physique)
-  - Federations (e.g., OCB, NPC, IFBB)
+  - Federations (e.g., OCB)
   - Date Range
 - **Interactive Map**: View event locations on an interactive map for better planning.
 - **Event Details**: Access detailed information about each event, including:
