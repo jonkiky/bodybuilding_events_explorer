@@ -151,9 +151,6 @@ export default function Home() {
     });
   };
 
-  const handleMarkerMouseOver = (marker) => {
-    setSelectedMarker(marker);
-  };
 
   const handleEventouseOver = (marker) => {
     if (marker.position) {
@@ -471,7 +468,6 @@ export default function Home() {
                     icon={getCustomIcon(marker.federation, marker.id === selectedMarker?.id)} // Assign custom icon here
                     eventHandlers={{
                       click: () => handleMarkerClick(marker),
-                      mouseover: () => handleMarkerMouseOver(marker),
                     }}
                   >
                     <Popup>

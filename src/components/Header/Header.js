@@ -19,6 +19,8 @@ const Header = (data) => {
     };
   }, []);
 
+  console.log(data);
+
   return (
     <>
     <header
@@ -31,43 +33,50 @@ const Header = (data) => {
       {/* Logo and Buttons */}
       <div className="flex items-center">
         {/* Logo/Title */}
-        <h1 className="text-lg text-black font-sans flex-shrink-0">
-          Bodybuilding Events Explorer (Beta Version) 
-        </h1>
-
+        <Link href="/" legacyBehavior>
+          <a target="_self" rel="noopener noreferrer">
+            <h1 className="text-lg text-black font-sans flex-shrink-0">
+              Bodybuilding Events Explorer (Beta Version)
+            </h1>
+          </a>
+        </Link>
+    
+        
         {/* Buttons */}
-        <div className="hidden sm:flex space-x-2 pl-8">
-          <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-            OCB  
-              <span
-              className="w-4 h-4 rounded-full bg-red-500"
-              title={data.ocb}
-               style={{
-                padding: "2px 7px",
-                color: "white",
-                marginLeft: "8px"
-              }}
-              >{data.ocb}</span>
-          </button>
-          {/*<button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-            WNBF
-          </button>
-          <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-            NPC
-          </button>
-          <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-            IFBB
-          </button>
-          <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-            INBA
-          </button>
-          <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-            ANBF
-          </button>
-          <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-            NANBF
-          </button>*/}
-        </div>
+        {data.ocb && (
+          <div className="hidden sm:flex space-x-2 pl-8">
+            <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
+              OCB  
+                <span
+                className="w-4 h-4 rounded-full bg-red-500"
+                title={data.ocb}
+                 style={{
+                  padding: "2px 7px",
+                  color: "white",
+                  marginLeft: "8px"
+                }}
+                >{data.ocb}</span>
+            </button>
+            {/*<button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
+              WNBF
+            </button>
+            <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
+              NPC
+            </button>
+            <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
+              IFBB
+            </button>
+            <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
+              INBA
+            </button>
+            <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
+              ANBF
+            </button>
+            <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
+              NANBF
+            </button>*/}
+          </div>
+        )}
       </div>
 
       {/* Dropdown Menu */}
@@ -81,11 +90,15 @@ const Header = (data) => {
         </button>
         {dropdownOpen && (
           <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50">
-            <Link href="/about-us">
-              <span className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</span>
+            <Link href="/about" legacyBehavior>
+              <a target="_blank" rel="noopener noreferrer">
+                <span className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</span>
+              </a>
             </Link>
-            <Link href="https://github.com/jonkiky/bodybuilding_events_explorer" target="_blank" rel="noopener noreferrer">
-              <span className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">GitHub Pages</span>
+            <Link href="https://github.com/jonkiky/bodybuilding_events_explorer" legacyBehavior>
+              <a target="_blank" rel="noopener noreferrer">
+                <span className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">GitHub Pages</span>
+              </a>
             </Link>
           </div>
         )}
