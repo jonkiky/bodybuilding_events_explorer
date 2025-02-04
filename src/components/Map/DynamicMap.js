@@ -5,12 +5,22 @@ import 'leaflet/dist/leaflet.css';
 
 import styles from './Map.module.scss';
 
-const { MapContainer } = ReactLeaflet;
+const { MapContainer, useMap } = ReactLeaflet;
 
-const Map = ({ children, className, width, height, ...rest }) => {
+const UpdateCenter = ({ center }) => {
+  const map = useMap();
+  useEffect(() => {
+    if (center) {
+      map.setView(center);
+    }
+  }, [center, map]);
+  return null;
+};
+
+const Map = ({ children, className, width, height, center, ...rest }) => {
   let mapClassName = styles.map;
 
-  if ( className ) {
+  if (className) {
     mapClassName = `${mapClassName} ${className}`;
   }
 
@@ -24,12 +34,12 @@ const Map = ({ children, className, width, height, ...rest }) => {
       });
     })();
   }, []);
-
   return (
-    <MapContainer className={mapClassName} {...rest}>
+    <MapContainer className={mapClassName} center={center} {...rest}>
+      <UpdateCenter center={center} />
       {children(ReactLeaflet, Leaflet)}
     </MapContainer>
-  )
-}
+  );
+};
 
 export default Map;

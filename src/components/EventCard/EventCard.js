@@ -1,7 +1,7 @@
 const EventCard = (input) => {
   const data = input.data;
   return (
-    <div className="max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-md flex overflow-hidden">
+    <div className="max-w-md mx-auto bg-white flex overflow-hidden">
       {/* Image Section */}
       <img
         src={data.flyers}
