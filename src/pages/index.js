@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Header from '@components/Header';
 import Map from '@components/Map';
@@ -9,21 +10,33 @@ import { Fragment } from 'react';
 import { data } from './data/data.json';
 
 
-const DEFAULT_CENTER = [39.725810, -95.024968];
+
+// Dynamically import Leaflet to avoid SSR issues
+const L = dynamic(() => import('leaflet'), { ssr: false });
 
 
 export default function Home() {
   
   let rawData = data;
+   const [L, setL] = useState(null);
   const [selectedMarker, setSelectedMarker] = useState(null);
   const [eventType, setEventType] = useState("Event Type");
   const [divisionType, setDivisionType] = useState("Divisions");
   const [dateRange, setDateRange] = useState({ start: "", end: "" });
   const [federation, setFederation] = useState("Federation/Competition"); // New State for Competitions/Federations
+  const [center, setCenter] = useState([39.725810, -95.024968]);
+  const [showDetailCard, setShowDetailCard] = useState(false);
+
 
    // Filter options for Competitions/Federations
   const federationOptions = ["All", "OCB"];
 
+ useEffect(() => {
+    (async () => {
+      const leaflet = await import('leaflet');
+      setL(leaflet);
+    })();
+  }, []);
 
 
   // Sample data for markers
@@ -101,6 +114,7 @@ export default function Home() {
  
   const handleMarkerClick = (marker) => {
     setSelectedMarker(marker);
+    setShowDetailCard(true);
     // Scroll to related content
     const contentElement = contentRefs.current[marker.id];
     if (contentElement) {
@@ -109,17 +123,62 @@ export default function Home() {
     }
   };
 
+ const getCustomIcon = (federation, isSelected = false) => {
+    if (!L) return null; // Ensure Leaflet is available
+
+    const colorMapping = {
+    OCB: '#07689F', // Blue
+    NPC: '#FF7E67', // Green
+    IFBB: '#FF4500', // Red
+    Default: '#808080', // Gray
+  };
+
+    const color = colorMapping[federation] || '#808080'; 
+    const selectedColor = isSelected ? '#DE3163' : color; // Use gold color if selected
+
+    const svgMarker = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 30 40">
+        <path fill="${selectedColor}" d="M15 0C9.5 0 5 4.5 5 10c0 7.5 10 20 10 20s10-12.5 10-20C25 4.5 20.5 0 15 0zM15 15c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"/>
+      </svg>
+    `;
+
+    return L.divIcon({
+      html: svgMarker,
+      className: '',
+      iconSize: [30, 40],
+      iconAnchor: [15, 40],
+      popupAnchor: [0, -40],
+    });
+  };
+
+
+  const handleEventouseOver = (marker) => {
+    if (marker.position) {
+      setCenter(marker.position);
+    }
+    setSelectedMarker(marker);
+  };
+
+  const handleEventCardClick = (marker) => {
+    setSelectedMarker(marker);
+    setShowDetailCard(true);
+  };
+
+  if (!L) {
+    return <div>Loading...</div>; // Show a loading message while Leaflet is initializing
+  }
 
   return (
     <div className="h-screen w-screen flex flex-col">
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
       <Header ocb={markerData.length}/>
 
       <div className="flex flex-1 pt-16">
         {/* Left Section */}
-        <div className="overflow-y-scroll no-scrollbar flex-none h-[calc(100vh-64px)] max-w-[380px] w-full bg-white border-r border-gray-300">
+        <div className={`overflow-y-scroll no-scrollbar flex-none h-[calc(100vh-64px)] max-w-[380px] w-full bg-white border-r border-gray-300 ${showDetailCard ? 'hidden' : ''}`}>
            <div className="pt-4 pb-3 pl-4 pr-4">
           {/* Date Pickers */}
             <div className="flex items-center space-x-4 mt-0 mb-5">
@@ -149,7 +208,7 @@ export default function Home() {
               </div>
             </div>
 
-                 {/* Federation Dropdown */}
+          {/* Federation Dropdown */}
             <div className="flex items-center space-x-2">
               <Menu as="div" className="relative inline-block text-left flex-1">
                 <div>
@@ -178,7 +237,7 @@ export default function Home() {
                   enterTo="transform opacity-100 scale-100"
                   leave="transition ease-in duration-75"
                   leaveFrom="opacity-100 scale-100"
-                  leaveTo="opacity-0 scale-95"
+                  leaveTo="transform opacity-0 scale-95"
                 >
                   <Menu.Items className="absolute left-0 mt-2 w-full rounded-sm shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
                     <div className="py-1">
@@ -231,7 +290,7 @@ export default function Home() {
                   enterFrom="transform opacity-0 scale-95"
                   enterTo="transform opacity-100 scale-100"
                   leave="transition ease-in duration-75"
-                  leaveFrom="transform opacity-100 scale-100"
+                  leaveFrom="opacity-100 scale-100"
                   leaveTo="transform opacity-0 scale-95"
                 >
                   <Menu.Items className="absolute left-0 mt-2 w-full rounded-sm shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
@@ -284,7 +343,7 @@ export default function Home() {
                   enterFrom="transform opacity-0 scale-95"
                   enterTo="transform opacity-100 scale-100"
                   leave="transition ease-in duration-75"
-                  leaveFrom="transform opacity-100 scale-100"
+                  leaveFrom="opacity-100 scale-100"
                   leaveTo="transform opacity-0 scale-95"
                 >
                   <Menu.Items className="absolute left-0 mt-2 w-full rounded-sm shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10">
@@ -312,7 +371,7 @@ export default function Home() {
           </div>
            {/* Separator */}
           <hr className="my-4 border-gray-300 mr-2 ml-2" />
-
+          
           <div className="p-3">
             <div className="space-y-1">
              {markerData && markerData.length > 0 ? (
@@ -320,9 +379,12 @@ export default function Home() {
                   <div
                     key={marker.id}
                     ref={(el) => (contentRefs.current[marker.id] = el)}
-                    className={`p-1 ${
-                      selectedMarker?.id === marker.id ? 'bg-blue-100' : ''
-                    }`}
+                    className={`p-1 cursor-pointer border border-gray-200 rounded-lg shadow-md ${selectedMarker?.id === marker.id ? 'bg-grey-100' : ''}`}
+                    onMouseOver={() => handleEventouseOver(marker)}
+                    onClick={() => handleEventCardClick(marker)}
+                    style={{ transition: 'box-shadow 0.3s'}}
+                    onMouseEnter={(e) => e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)'}
+                    onMouseLeave={(e) => e.currentTarget.style.boxShadow = 'none'}
                   >
                     <EventCard data={marker} />
                   </div>
@@ -333,9 +395,64 @@ export default function Home() {
         </div>
         {/* Left Section Ends*/}
 
+        {/* Detailed Event Card */}
+        {showDetailCard && selectedMarker && (
+          <div className="flex-none h-[calc(100vh-64px)] max-w-[380px] w-full bg-white border-r border-gray-300 pt-4 pl-4 pr-4 pb-16 overflow-y-scroll">
+            <button onClick={() => setShowDetailCard(false)} className="mb-4 text-black">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="11" stroke="black" strokeWidth="2" fill="none" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <div>
+              {selectedMarker.flyers && (
+                <div className='w-ful max-h-64 overflow-hidden rounded-sm'>
+                  <img src={selectedMarker.flyers} alt="event image" className='w-ful'/>
+                </div>
+              )}
+              <div className="flex items-center pt-5">
+                <h2 className="text-xl font-bold">{selectedMarker.popupText}</h2>
+              </div>
+              <div>
+                {selectedMarker.link && (
+                  <p className="pt-3 pb-3">
+                    <a href={selectedMarker.link} target="_blank" rel="noopener noreferrer" className="text-black border border-black px-2 py-1 rounded-lg">
+                      Website
+                    </a>
+                  </p>
+                )}
+                <p><strong>Date:</strong> {selectedMarker.date}</p>
+                <p><strong>Address:</strong> {selectedMarker.fullAddress}</p>
+                {selectedMarker.eventType && (
+                  <>
+                    <p><strong>Event Type:</strong></p>
+                    <ul className="list-disc list-inside">
+                      {selectedMarker.eventType.map((type, index) => (
+                        <li key={index}>{type}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+                {selectedMarker.divisions && (
+                  <>
+                    <p><strong>Divisions:</strong></p>
+                    <ul className="list-disc list-inside">
+                      {selectedMarker.divisions.map((division, index) => (
+                        <li key={index}>{division}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+                <p><strong>Organization:</strong> {selectedMarker.federation}</p>
+              </div>
+              {/* Add more fields as necessary */}
+            </div>
+          </div>
+        )}
+
         {/* Right Section */}
         <div className="flex-1 bg-white block">
-          <Map className={styles.homeMap} center={DEFAULT_CENTER} zoom={5}>
+          <Map className={styles.homeMap} center={center} zoom={5}>
             {({ TileLayer, Marker, Popup }) => (
               <>
                 <TileLayer
@@ -348,13 +465,16 @@ export default function Home() {
                   <Marker
                     key={marker.id}
                     position={marker.position}
+                    icon={getCustomIcon(marker.federation, marker.id === selectedMarker?.id)} // Assign custom icon here
                     eventHandlers={{
                       click: () => handleMarkerClick(marker),
                     }}
                   >
                     <Popup>
-                      {marker.popupText}
-                      {selectedMarker?.id === marker.id}
+                      <b>{marker.popupText}</b>
+                      <p> Date : {marker.date} </p>
+                      <p> Address : {marker.fullAddress} </p>
+                      
                     </Popup>
                   </Marker>
                 ))):""}
