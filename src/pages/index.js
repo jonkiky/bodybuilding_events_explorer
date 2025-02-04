@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Header from '@components/Header';
 import Map from '@components/Map';
@@ -11,10 +12,14 @@ import { data } from './data/data.json';
 
 const DEFAULT_CENTER = [39.725810, -95.024968];
 
+// Dynamically import Leaflet to avoid SSR issues
+const L = dynamic(() => import('leaflet'), { ssr: false });
+
 
 export default function Home() {
   
   let rawData = data;
+   const [L, setL] = useState(null);
   const [selectedMarker, setSelectedMarker] = useState(null);
   const [eventType, setEventType] = useState("Event Type");
   const [divisionType, setDivisionType] = useState("Divisions");
@@ -24,6 +29,12 @@ export default function Home() {
    // Filter options for Competitions/Federations
   const federationOptions = ["All", "OCB"];
 
+ useEffect(() => {
+    (async () => {
+      const leaflet = await import('leaflet');
+      setL(leaflet);
+    })();
+  }, []);
 
 
   // Sample data for markers
@@ -109,6 +120,37 @@ export default function Home() {
     }
   };
 
+ const getCustomIcon = (federation) => {
+    if (!L) return null; // Ensure Leaflet is available
+
+    const colorMapping = {
+    OCB: '#07689F', // Blue
+    NPC: '#FF7E67', // Green
+    IFBB: '#FF4500', // Red
+    Default: '#808080', // Gray
+  };
+
+
+    const color = colorMapping[federation] || '#808080'; 
+
+    const svgMarker = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 30 40">
+        <path fill="${color}" d="M15 0C9.5 0 5 4.5 5 10c0 7.5 10 20 10 20s10-12.5 10-20C25 4.5 20.5 0 15 0zM15 15c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"/>
+      </svg>
+    `;
+
+    return L.divIcon({
+      html: svgMarker,
+      className: '',
+      iconSize: [30, 40],
+      iconAnchor: [15, 40],
+      popupAnchor: [0, -40],
+    });
+  };
+
+  if (!L) {
+    return <div>Loading...</div>; // Show a loading message while Leaflet is initializing
+  }
 
   return (
     <div className="h-screen w-screen flex flex-col">
@@ -348,6 +390,7 @@ export default function Home() {
                   <Marker
                     key={marker.id}
                     position={marker.position}
+                    icon={getCustomIcon(marker.federation)} // Assign custom icon here
                     eventHandlers={{
                       click: () => handleMarkerClick(marker),
                     }}
