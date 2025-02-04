@@ -15,7 +15,7 @@ import { data } from './data/data.json';
 const L = dynamic(() => import('leaflet'), { ssr: false });
 
 
-export default function Home() {
+export default function About() {
   
   let rawData = data;
    const [L, setL] = useState(null);
@@ -176,7 +176,9 @@ export default function Home() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+      <div className="bg-black text-white text-center py-2">
+        This is a product under development
+      </div>
       <Header ocb={markerData.length}/>
 
       <div className="flex flex-1 pt-16">
@@ -408,44 +410,32 @@ export default function Home() {
               </svg>
             </button>
             <div>
-              {selectedMarker.flyers && (
-                <div className='w-ful max-h-64 overflow-hidden rounded-sm'>
-                  <img src={selectedMarker.flyers} alt="event image" className='w-ful'/>
-                </div>
-              )}
+              <div className='w-ful max-h-64 overflow-hidden  rounded-sm'>
+                <img src={selectedMarker.flyers} alt="event image" className='w-ful'/>
+              </div>
               <div className="flex items-center pt-5">
                 <h2 className="text-xl font-bold">{selectedMarker.popupText}</h2>
               </div>
               <div>
-                {selectedMarker.link && (
-                  <p className="pt-3 pb-3">
-                    <a href={selectedMarker.link} target="_blank" rel="noopener noreferrer" className="text-black border border-black px-2 py-1 rounded-lg">
-                      Website
-                    </a>
-                  </p>
-                )}
+                <p className="pt-3 pb-3">{selectedMarker.link && (
+                  <a href={selectedMarker.link} target="_blank" rel="noopener noreferrer" className="text-black border border-black px-2 py-1 rounded-lg">
+                    Website
+                  </a>
+                )}</p>
                 <p><strong>Date:</strong> {selectedMarker.date}</p>
                 <p><strong>Address:</strong> {selectedMarker.fullAddress}</p>
-                {selectedMarker.eventType && (
-                  <>
-                    <p><strong>Event Type:</strong></p>
-                    <ul className="list-disc list-inside">
-                      {selectedMarker.eventType.map((type, index) => (
-                        <li key={index}>{type}</li>
-                      ))}
-                    </ul>
-                  </>
-                )}
-                {selectedMarker.divisions && (
-                  <>
-                    <p><strong>Divisions:</strong></p>
-                    <ul className="list-disc list-inside">
-                      {selectedMarker.divisions.map((division, index) => (
-                        <li key={index}>{division}</li>
-                      ))}
-                    </ul>
-                  </>
-                )}
+                <p><strong>Event Type:</strong></p>
+                <ul className="list-disc list-inside">
+                  {selectedMarker.eventType.map((type, index) => (
+                    <li key={index}>{type}</li>
+                  ))}
+                </ul>
+                <p><strong>Divisions:</strong></p>
+                <ul className="list-disc list-inside">
+                  {selectedMarker.divisions.map((division, index) => (
+                    <li key={index}>{division}</li>
+                  ))}
+                </ul>
                 <p><strong>Organization:</strong> {selectedMarker.federation}</p>
               </div>
               {/* Add more fields as necessary */}

@@ -1,19 +1,38 @@
 import Link from 'next/link';
-import { FaGithub } from 'react-icons/fa';
+import { FaAlignJustify } from "react-icons/fa";
+import { useState, useEffect, useRef } from 'react';
 
 const Header = (data) => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
+    <>
     <header
-      className="h-16 flex items-center justify-between border-b border-slate-200 w-full bg-white text-slate-600 px-4 fixed top-0"
+      className="h-16 flex items-center justify-between border-b border-slate-200 w-full bg-white text-slate-600 px-4 fixed"
       style={{
         zIndex: 1200,
       }}
     >
+   
       {/* Logo and Buttons */}
       <div className="flex items-center">
         {/* Logo/Title */}
         <h1 className="text-lg text-black font-sans flex-shrink-0">
-          Bodybuilding Events Explorer
+          Bodybuilding Events Explorer (Beta Version) 
         </h1>
 
         {/* Buttons */}
@@ -51,18 +70,28 @@ const Header = (data) => {
         </div>
       </div>
 
-      {/* GitHub Button */}
-      <div className="hidden sm:block">
-        <Link href="https://github.com/jonkiky/bodybuilding_events_explorer" target="_blank" rel="noopener noreferrer">
-          <button
-            className="bg-white flex items-center whitespace-nowrap"
-            aria-label="Go to GitHub"
-          >
-            <FaGithub className="text-black text-2xl" />
-          </button>
-        </Link>
+      {/* Dropdown Menu */}
+      <div className="relative hidden sm:block" ref={dropdownRef}>
+        <button
+          className="bg-white flex items-center whitespace-nowrap"
+          aria-label="Menu"
+          onClick={() => setDropdownOpen(!dropdownOpen)}
+        >
+          <FaAlignJustify />
+        </button>
+        {dropdownOpen && (
+          <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50">
+            <Link href="/about-us">
+              <span className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Us</span>
+            </Link>
+            <Link href="https://github.com/jonkiky/bodybuilding_events_explorer" target="_blank" rel="noopener noreferrer">
+              <span className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">GitHub Pages</span>
+            </Link>
+          </div>
+        )}
       </div>
     </header>
+    </>
   );
 };
 
