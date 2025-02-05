@@ -33,6 +33,7 @@ export default function About() {
           <h2 className="text-xl font-semibold mt-4">Join Us in Growing the Community</h2>
           <p>Bodybuilding is more than just a sport—it’s a lifestyle. Our goal is to empower athletes by providing the tools they need to succeed in their competition journey. Whether you're aiming for your first show or preparing for the big stage, Bodybuilding Events Explorer is here to guide you.</p>
           <p>Start exploring today and never miss an event again!</p>
+          <p>Contact US : </p>
         </div>
       </div>
     </div>

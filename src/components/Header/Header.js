@@ -33,13 +33,11 @@ const Header = (data) => {
       {/* Logo and Buttons */}
       <div className="flex items-center">
         {/* Logo/Title */}
-        <Link href="/" legacyBehavior>
-          <a target="_self" rel="noopener noreferrer">
+          <a target="_self" href="/" rel="noopener noreferrer">
             <h1 className="text-lg text-black font-sans flex-shrink-0">
               Bodybuilding Events Explorer (Beta Version)
             </h1>
           </a>
-        </Link>
     
         
         {/* Buttons */}
