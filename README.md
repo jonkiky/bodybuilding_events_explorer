@@ -33,12 +33,6 @@ Ensure you have the following installed:
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 
-### Quick Start
-
-```
-npx create-next-app -e https://github.com/colbyfayock/next-leaflet-starter
-```
-
 ### Running the Project
 First, run the development server:
 
