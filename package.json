@@ -6,7 +6,7 @@
   "author": "Yizhen Chen <jonkiky@gmail.com>",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "export": "next export",
     "start": "next start",
     "deploy": "gh-pages -d out"
