@@ -1,12 +1,18 @@
+const DEFAULT_IMAGE = "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
 const EventCard = (input) => {
   const data = input.data;
   return (
     <div className="max-w-md mx-auto bg-white flex overflow-hidden">
       {/* Image Section */}
       <img
-        src={data.flyers}
+        src={data.flyers || DEFAULT_IMAGE}
         className="w-40 h-auto object-cover"
         alt="Event Flyer"
+        onError={(e) => {
+          e.target.onerror = null;
+          e.target.src = DEFAULT_IMAGE;
+        }}
       />
       {/* Content Section */}
       <div className="p-2 flex flex-col justify-between">

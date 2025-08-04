@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { FaAlignJustify } from "react-icons/fa";
 import { useState, useEffect, useRef } from 'react';
 
-const Header = (data) => {
+const Header = ({ markerData }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -19,7 +19,19 @@ const Header = (data) => {
     };
   }, []);
 
-  console.log(data);
+  const data = markerData || [];
+
+  // Get distinct federation values and their counts
+  const federationCounts = {};
+  if (Array.isArray(data)) {
+    data.forEach(item => {
+      if (item.federation) {
+        federationCounts[item.federation] = (federationCounts[item.federation] || 0) + 1;
+      }
+    });
+  }
+
+  console.log('Federation counts:', federationCounts);
 
   return (
     <>
@@ -41,38 +53,27 @@ const Header = (data) => {
     
         
         {/* Buttons */}
-        {data.ocb && (
+        {Object.keys(federationCounts).length > 0 && (
           <div className="hidden sm:flex space-x-2 pl-8">
-            <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-              OCB  
+            {Object.entries(federationCounts).map(([federation, count]) => (
+              <button 
+                key={federation}
+                className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap"
+              >
+                {federation}
                 <span
-                className="w-4 h-4 rounded-full bg-red-500"
-                title={data.ocb}
-                 style={{
-                  padding: "2px 7px",
-                  color: "white",
-                  marginLeft: "8px"
-                }}
-                >{data.ocb}</span>
-            </button>
-            {/*<button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-              WNBF
-            </button>
-            <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-              NPC
-            </button>
-            <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-              IFBB
-            </button>
-            <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-              INBA
-            </button>
-            <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-              ANBF
-            </button>
-            <button className="text-sm bg-white text-slate-600 px-4 py-1 rounded-full border border-black whitespace-nowrap">
-              NANBF
-            </button>*/}
+                  className="w-4 h-4 rounded-full bg-gray-600"
+                  title={`${count} events`}
+                  style={{
+                    padding: "2px 7px",
+                    color: "white",
+                    marginLeft: "8px"
+                  }}
+                >
+                  {count}
+                </span>
+              </button>
+            ))}
           </div>
         )}
       </div>

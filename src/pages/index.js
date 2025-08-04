@@ -14,6 +14,7 @@ import { data } from './data/data.json';
 // Dynamically import Leaflet to avoid SSR issues
 const L = dynamic(() => import('leaflet'), { ssr: false });
 
+const DEFAULT_IMAGE = "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?q=80&w=3098&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
 export default function Home() {
   
@@ -29,7 +30,7 @@ export default function Home() {
 
 
    // Filter options for Competitions/Federations
-  const federationOptions = ["All", "OCB"];
+  const federationOptions = ["All", "OCB", "NPC","IFBB"];
 
  useEffect(() => {
     (async () => {
@@ -41,6 +42,7 @@ export default function Home() {
 
   // Sample data for markers
   const getFilteredData = (data) => {
+  const today = new Date(); // Get today's date
   return data
     .filter((marker) => {
       if (!marker) return false; // Skip null or undefined markers
@@ -49,9 +51,9 @@ export default function Home() {
         eventType === "Event Type" || eventType === "All Event Type" || marker.eventType?.includes(eventType);
       const divisionTypeMatch =
         divisionType === "Divisions" || divisionType === "All Division" || marker.divisions?.includes(divisionType);
-       const federationMatch =
-          federation === "Federation/Competition" || federation === "All" || marker.federation?.includes(federation); // New Filter Logic
-
+      const federationMatch =
+        federation === "Federation/Competition" || federation === "All" || marker.federation?.includes(federation);
+     
       const markerDate = new Date(marker.date);
       const startDate = dateRange.start ? new Date(dateRange.start) : null;
       const endDate = dateRange.end ? new Date(dateRange.end) : null;
@@ -60,7 +62,9 @@ export default function Home() {
         (!startDate || markerDate >= startDate) &&
         (!endDate || markerDate <= endDate);
 
-        return eventTypeMatch && divisionTypeMatch && federationMatch && dateRangeMatch;
+      const isAfterToday = markerDate >= today; // Ensure the event date is after today
+
+      return eventTypeMatch && divisionTypeMatch && federationMatch && dateRangeMatch && isAfterToday;
     })
     .sort((a, b) => {
       const dateA = new Date(a.date);
@@ -71,7 +75,6 @@ export default function Home() {
 
   // let markerData = data;
   let markerData = getFilteredData(rawData);
-
 
   const handleDropdownSelect = (setter, item) => {
     setter(item);
@@ -174,7 +177,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <Header ocb={markerData.length}/>
+      <Header markerData={markerData}/>
 
       <div className="flex flex-1 pt-16">
         {/* Left Section */}
@@ -405,11 +408,17 @@ export default function Home() {
               </svg>
             </button>
             <div>
-              {selectedMarker.flyers && (
-                <div className='w-ful max-h-64 overflow-hidden rounded-sm'>
-                  <img src={selectedMarker.flyers} alt="event image" className='w-ful'/>
-                </div>
-              )}
+              <div className='w-ful max-h-64 overflow-hidden rounded-sm'>
+                <img 
+                  src={selectedMarker.flyers || DEFAULT_IMAGE} 
+                  alt="event image" 
+                  className='w-ful'
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = DEFAULT_IMAGE;
+                  }}
+                />
+              </div>
               <div className="flex items-center pt-5">
                 <h2 className="text-xl font-bold">{selectedMarker.popupText}</h2>
               </div>
