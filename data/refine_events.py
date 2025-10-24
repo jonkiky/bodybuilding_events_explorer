@@ -38,7 +38,7 @@ def transform_event(event):
     # Extract latitude and longitude using OpenCage Geocoder
 
     # Initialize OpenCage Geocoder with your API key
-    API_KEY = "eb8f5c09f1864aa59ab3bbdfe0942d0b"  # Replace with your actual OpenCage API key
+    API_KEY = "eb8f5c09f1864aa59ab3bbdfe0942d0b123456"  # Replace with your actual OpenCage API key
     geocoder = OpenCageGeocode(API_KEY)
 
     position = []
